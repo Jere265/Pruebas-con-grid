@@ -29,6 +29,7 @@ body {
     grid-template-columns: auto auto auto;
     width: 100%;
     justify-self: center;
+    height: 400px;
   }
   
   .iconos > .caja {
@@ -41,4 +42,18 @@ body {
   
   .texto {
     width: 90%;
+  }
+
+  .marco_imagen {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .img {
+    width: 125px;
+    height: 125px;
+
+    border-radius: 50%;
+    border: 10px inset black;
+    background-color:antiquewhite;
   }
