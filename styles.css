@@ -26,8 +26,8 @@ body {
   
   .iconos {
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 100%;
+    grid-template-columns: auto auto;
+    width: 85%;
     justify-self: center;
     height: 400px;
   }
@@ -50,10 +50,14 @@ body {
   }
 
   .img {
-    width: 125px;
-    height: 125px;
+    width: 140px;
+    height: 140px;
 
     border-radius: 50%;
     border: 10px inset black;
     background-color:antiquewhite;
+  }
+
+  .icono_de_arriba {
+    grid-column: 1/3;
   }
