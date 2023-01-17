@@ -1,5 +1,13 @@
+:root {
+  --negro: rgb(34, 40, 49);
+  --grisoscuro: rgb(57, 62, 70);
+  --verdeazul: rgb(0, 173, 181);
+  --gris: rgb(238, 238, 238);
+}
+
 body {
-    background-color: antiquewhite;
+    background-color: var(--negro);
+    font-family: 'Roboto', sans-serif;
   }
   
   .grid-layout {
@@ -9,18 +17,18 @@ body {
     grid-template-columns: auto auto auto;
     padding: 20px;
     border: 1px solid black;
-    background-color: lightgreen;
+    background-color: var(--verdeazul);
     column-gap: 30px;
   }
   
   .caja {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: auto;
     border: 4px solid black;
-    background-color: lightgray;
+    background-color: var(--grisoscuro);
     margin: 15px;
     text-align: center;
-    line-height: 150px;
+    line-height: 60px;
     justify-self: center;
   }
   
@@ -36,12 +44,13 @@ body {
     width: 90%;
   }
   
-  .titulo {
-    width: 100%;
+  .caja > .titulo {
+    width: 400px;
   }
   
   .texto {
     width: 90%;
+    color: var(--gris);
   }
 
   .marco_imagen {
@@ -70,3 +79,32 @@ body {
 
     /* transition: .5s; */
   }
+
+  h1 {
+    color: var(--gris);
+  }
+
+  .formulario {
+    margin-left: 200px;
+    margin-right: 200px;
+
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.contenido_de_formulario {
+    display:grid;
+    color: var(--gris);
+    background-color: var(--grisoscuro);
+    grid-template-columns: auto 85%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+    text-align: end;
+
+    padding: 20px;
+}
+
+.boton_de_enviar {
+    grid-column: 1/3;
+}
